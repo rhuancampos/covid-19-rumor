@@ -12,6 +12,7 @@ def get_struct_boatos(df):
             'subtitle': '',
             'explanation': '',
             'source': '',
+            'text_analysis': df[1][4],
             'classification': df[1][5]
             }
 
@@ -25,6 +26,7 @@ def get_struct_saude(df):
             'subtitle': '',
             'explanation': '',
             'source': '',
+            'text_analysis': df[1][4],
             'classification': df[1][6]
             }
 
@@ -45,6 +47,7 @@ def get_struct_oglobo(df):
             'subtitle': df[1][4],
             'explanation': df[1][5],
             'source': df[1][6],
+            'text_analysis': df[1][3],
             'classification': df[1][7]
             }
 
@@ -65,6 +68,7 @@ columns = ['id',
             'subtitle',
             'explanation',
             'source',
+            'text_analysis',
             'classification']
 
 df = pd.DataFrame(columns=columns)
