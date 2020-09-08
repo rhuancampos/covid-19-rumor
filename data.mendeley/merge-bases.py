@@ -51,7 +51,7 @@ def get_struct_oglobo(df):
             'classification': df[1][7]
             }
 
-path1 = 'boatos.org.csv'
+path1 = 'new-boatos.org.csv'
 path2 = 'saude.gov.csv'
 path3 = 'oglobo.com.csv'
 
