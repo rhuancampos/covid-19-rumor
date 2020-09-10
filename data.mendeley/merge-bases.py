@@ -82,4 +82,8 @@ for row in dataset2.iterrows():
 for row in dataset3.iterrows():
     df = df.append(get_struct_oglobo(row), ignore_index = True)
 
+df = df[df['text_analysis'].notnull()]
+df = df[df['classification'] == 1]
+df.drop_duplicates(subset=['text_analysis'])
+
 df.to_csv('data.mendeley.csv')
