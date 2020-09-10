@@ -84,6 +84,6 @@ for row in dataset3.iterrows():
 
 df = df[df['text_analysis'].notnull()]
 df = df[df['classification'] == 1]
-df.drop_duplicates(subset=['text_analysis'])
+df.drop_duplicates(subset=['text_analysis'], keep = False, inplace = True)
 
 df.to_csv('data.mendeley.csv')
